@@ -14,6 +14,7 @@ enum SomeEnum {
 
 class ContentViewModel: ObservableObject {
 
+//    var someInt = 0 // <--- if this is uncommented, then the enum doesn't break the expected behavior
 //    var someEnum: SomeEnum = .someCase // <--- here, it doesn't work
     @Published var numbers: [Int] = []
     var someEnum: SomeEnum = .someCase // <--- here, it works
